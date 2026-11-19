@@ -1,0 +1,7 @@
+Callsign|Type|Airline|From|To|Passengers|Fuel|CurrentSector|AssignedRunway|Priority|ArrivalTick
+BB-876|Airbus A320neo|BlackBox|NullVoid|Hakuna|165|15|Air Segment (North)|Runway 04|9|0
+BB-437|Viking DHC-8|BlackBox|BitLand|NeverLand|60|12|Cache Fly (East)|Runway 09|9|0
+BB-211|ATR 72|BlackBox|Haboot|Suood|70|10|Syntax Sector (West)|Runway 17|9|0
+BB-940|MedEvac-1|BlackBox|TownsWill|NullVoid|4|8|Control Tower|Runway 12|9|0
+NA-640|C-130|NullAir|Hostile|Restricted Zone|1|99|Alpha Tree (South)|Restricted Zone|1|25
+NA-429|MIG-21|NullAir|Hostile|Restricted Zone|1|99|Alpha Tree (South)|Restricted Zone|1|25
