@@ -29,7 +29,7 @@ public:
     void   addCorridor(const string& from, const string& to, int weightTicks);
     int    getWeight(int from, int to);
     int    getSectorCount();
-    int    getSectorIndex(const string& name);   // exact match first, then prefix match
+    int    getSectorIndex(const string& name);   
     string getSectorName(int index);
     bool   isRunway(int index);
     AdjNode* getNeighbors(int index);
