@@ -1,4 +1,4 @@
-// RadarMST.h - Module 9: minimum spanning tree with Kruskal + union-find (Student 3)
+
 #ifndef RADARMST_H
 #define RADARMST_H
 #include "Common.h"
@@ -10,15 +10,14 @@ struct Edge {
     int weight;
 };
 
-// Union-find (disjoint set) used by Kruskal
 class UnionFind {
 private:
     int parent[MAX_SECTORS];
     int rankArr[MAX_SECTORS];
 public:
     UnionFind(int n);
-    int  find(int x);              // with path compression
-    bool unite(int a, int b);      // false if already in the same set
+    int  find(int x);              
+    bool unite(int a, int b);      
 };
 
 class RadarMST {
@@ -30,16 +29,16 @@ private:
     int  mstCount;
     int  totalCost;
 
-    void collectEdges();                      // read edges from the graph
-    void sortEdges();                         // own sort (no std::sort)
-    bool isConnectedWithout(int skipIndex);   // helper for verification
+    void collectEdges();                      
+    void sortEdges();                         
+    bool isConnectedWithout(int skipIndex);   
 
 public:
     RadarMST(SpaceGraph* g);
 
     void computeMST();
     void displayMST();
-    bool verifyConnectivity();    // removes each MST edge and shows the network disconnects
+    bool verifyConnectivity();    
 };
 
 #endif
