@@ -1,0 +1,20 @@
+EmployeeID|Name|Role|AssignedCallsign
+EBB51|Capt. M.M. Alam|Captain (PIC)|BB-876
+EBB27|Capt. Rashid Minhas|First Officer (FO)|BB-876
+EBB33|Ms. Hina Tariq|Purser|BB-876
+EBB87|Ms. Sadia Rehman|Air Hostess|BB-876
+EBB91|Mr. Ahmed Siddiqui|Attendant|BB-876
+EBB55|Ms. Gulelaila|Air Hostess|BB-876
+EBB67|Capt. Marium Mukhtiar|Captain (PIC)|BB-437
+EBB45|Capt. Ayesha Farooq|First Officer (FO)|BB-437
+EBB10|Ms. QuratulAin|Air Hostess|BB-437
+EBB43|Capt. Rifat Haye|Captain (PIC)|BB-211
+EBB29|Mr. Kamran Ashraf|First Officer (FO)|BB-211
+EBB01|Ms. Maryam Javed|Air Hostess|BB-211
+EBB91|Mr. Rajab Jalal|Attendant|BB-211
+EBB22|Capt. Daim Gillani|Captain (PIC)|BB-940
+EBB02|Capt. Fateh Sikandar|First Officer (FO)|BB-940
+EBB64|Dr. Hukam Ullah|Flight Nurse|BB-940
+EBB15|Mr. Daver Khan|Flight Paramedic|BB-940
+ENA56|Capt. Yuri Hiroshi|Pilot|NA-640
+ENA32|Capt. Charlie Brown|Pilot|NA-429
