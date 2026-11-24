@@ -1,5 +1,5 @@
 #include "Registration.h"
-
+//implemented by singly list
 Registration::Registration() {
     flightHead = nullptr;
     flightTail = nullptr;
@@ -67,3 +67,34 @@ void Registration::displayAllFlights() {
              << f->priorityLevel << "\n";
     }
 }
+void Registration::addCrew(Crew* crew) {
+    crew->next = nullptr;
+    if (crewHead == nullptr) crewHead = crew;
+    else crewTail->next = crew;
+    crewTail = crew;
+}
+
+void Registration::displayAllCrew() {
+    cout << padRight("ID", 8) << padRight("Name", 24) << padRight("Role", 20) << "Flight\n";
+    for (Crew* c = crewHead; c != nullptr; c = c->next)
+        cout << padRight(c->employeeID, 8) << padRight(c->name, 24) << padRight(c->role, 20)
+             << c->assignedCallsign << "\n";
+}
+
+Flight* Registration::findFlight(const string& callsign) {
+    return hashTable.find(callsign);
+}
+
+string Registration::getPilotName(const string& callsign) {
+    for (Crew* c = crewHead; c != nullptr; c = c->next) {
+        if (c->assignedCallsign == callsign &&
+            (c->role.find("Captain") != string::npos || c->role.find("Pilot") != string::npos))
+            return c->name;
+    }
+    return "Unknown";
+}
+
+Flight* Registration::getHead() { return flightHead; }
+int Registration::getFlightCount() { return flightCount; }
+HashTable& Registration::getHashTable() { return hashTable; }
+
