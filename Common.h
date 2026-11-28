@@ -42,4 +42,34 @@ struct Crew {
     string assignedCallsign;
     Crew*  next;
 };
+struct Route {
+    string sectors[MAX_SECTORS];
+    int    pathLength;
+    int    totalCost;
+    bool   found;
+};
+
+struct ScenarioEvent {
+    int    tick;
+    string eventType;
+    string target;
+};
+
+struct MissingFlight {
+    string flightName;
+    string lastKnownSector;
+    int    tickWindow;
+    int    credThreshold;
+    int    spawnTick;
+    bool   resolved;
+    MissingFlight* next;
+};
+
+// Helper functions (Utils.cpp)
+int    splitLine(const string& line, char delimiter, string parts[], int maxParts);
+int    toInt(const string& text);            // -1 if not a valid number
+string intToString(int value);
+string trimText(const string& text);
+string twoDigits(int value);
+string padRight(const string& text, int width);
 #endif
