@@ -1,4 +1,4 @@
-// BSTflight.h - Module 4: binary search tree keyed by callsign (Student 2)
+// BSTflight.h - Module 4: binary search tree keyed by callsign 
 #ifndef BSTFLIGHT_H
 #define BSTFLIGHT_H
 #include "Common.h"
