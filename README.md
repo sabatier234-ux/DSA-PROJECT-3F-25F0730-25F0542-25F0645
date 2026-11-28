@@ -64,19 +64,11 @@ Course: CL2001 Data Structures, Section CS-3F, Fall 2026
 - If rules.txt is missing or corrupt, built-in defaults are used
   (30 ticks, 100 credibility, standard penalties and gains).
 
-## Known Limitations
-1. Fixed hash table size; no resizing when the table fills.
-2. Flight spawns follow scenario.txt only; no fully random scenario generation.
-3. Undo supports only the commands listed as undoable (options 07-11).
-4. Console only; no graphical radar.
-5. Input is read line by line; very long or malformed input is rejected, not corrected.
 
 ## Deviations from the Manual
 1. airspace.txt weights used instead of Table 4 because the file is what
    the program loads and the manual's two sources conflict.
 2. Runway 27 reference in Module 7 replaced with Runway 17 because
    Runway 27 does not exist in the game.
-3. Cyber escalation uses ___ ticks for corridor and ___ for tower because
-   the manual states two different sets of values.
-4. Duplicate employee ID EBB91 in sample crew.txt changed to ___.
+
 
